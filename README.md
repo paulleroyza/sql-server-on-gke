@@ -11,7 +11,9 @@ kubectl create secret generic mssql-secrets --from-literal=SA_PASSWORD="Super-se
 
 ## Create the disks and the deployment
 kubectl apply -f volume-claims.yaml
+
 kubectl apply -f mssql-deployment.yaml
+
 kubectl apply -f mssql-service.yaml
 
 ### A load balancer running on port 1433 is created. Connect with your favorite tool
