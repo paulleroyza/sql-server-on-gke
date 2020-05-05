@@ -2,7 +2,7 @@
 gcloud container clusters create kubeernetes-cluster --project=your-project-id --zone=us-central1-a
 
 # Connect to the Cluster
-gcloud container clusters get-credentials kubeernetes-cluster --zone us-central1-a --project doug-rehnstrom
+gcloud container clusters get-credentials kubeernetes-cluster --zone us-central1-a --project=your-project-id
 
 # Create a password for sa
 kubectl create secret generic mssql-secrets --from-literal=SA_PASSWORD="Super-secret-pa$$word-Here!"
